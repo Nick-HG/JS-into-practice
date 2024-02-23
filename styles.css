@@ -1,11 +1,44 @@
+:root.dark {
+  --border-btn: 1px solid rgb(220, 220, 220);
+  --color-base-bg: rgb(18, 18, 18);
+  --color-base-text: rgb(240, 240, 240);
+  --color-btn-bg: rgb(36, 36, 36);
+}
+
+:root.light {
+  --border-btn: 1px solid rgb(36, 36, 36);
+  --color-base-bg: rgb(240, 240, 240);
+  --color-base-text: rgb(18, 18, 18);
+  --color-btn-bg: rgb(220, 220, 220);
+}
+
 body {
   margin: 0;
+  background-color: var(--color-base-bg);
+  color: var(--color-base-text);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
   border: 5px solid blue;
 }
+ 
+/* Dark theme */
+.theme-toggle {
+  background-color: var(--color-btn-bg);
+  border: var(--border-btn); 
+  font-size: 1.125rem;
+  padding: 10px 20px;
+}
 
+.theme-toggle:hover {
+  cursor: pointer;
+}
+
+.sun,
+.moon {
+  fill: var(--color-base-text);
+}
 
 
 /* Read More */
@@ -69,6 +102,7 @@ main {
   font-size: 1.5rem;
   padding: 1rem;
   background-color: rgba(255, 255, 255, .4);
+  color: rgb(18, 18, 18);
   display: flex;
   justify-content: center;
   align-items: center;

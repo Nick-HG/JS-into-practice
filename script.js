@@ -1,3 +1,4 @@
+// Read More Toggle
 const expandableButtons = document.querySelectorAll("[data-expand-button]")
 
 expandableButtons.forEach(button => {
@@ -16,3 +17,13 @@ function setExpandButtonText(button) {
   const expanded = expandableElement.classList.contains("expanded")
   button.innerText = expanded ? "Read Less" : "Read More"
 }
+
+
+// Set dark theme
+function setTheme() {
+  const root = document.documentElement;
+  const newTheme = root.className === 'dark' ? 'light' : 'dark';
+  root.className = newTheme;
+}
+
+document.querySelector('.theme-toggle').addEventListener('click', setTheme)
