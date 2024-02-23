@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS-into-practice</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -22,7 +23,35 @@
 
   <main>
 
-    <!-- Read more -->
+    <div class="article-container">
+      <div class="articles"> 
+        <article>
+          <h2>An Introduction</h2>
+          <div data-expandable>
+            <p data-expand-text>I suppose you could say this is just me putting into practice what I've learnt and spilling it out
+              onto the page. From HTML, CSS, and JavaScript I am showcasing some of the tools I have begun to use and 
+              apply them to a webpage. At the moment this webpage is very sporadic without a coherent narrative. 
+              The rest of the content is simply filler to aid in demonstrating the JavaScript concepts applied. 
+            </p>
+            <button data-expand-button>Read More</button>
+          </div>
+        </article>
+        <article>
+            <h2>Applying JavaScript</h2>
+            <div data-expandable>
+              <p data-expand-text>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore consequuntur nam excepturi iure! Facilis voluptatum velit aperiam praesentium adipisci porro.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam tenetur cumque molestias? Reprehenderit maiores cupiditate eaque totam quibusdam illum?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas consequuntur magnam tempore recusandae, mollitia ipsa repellat dolores sed praesentium nobis blanditiis omnis perferendis temporibus facilis et odio provident voluptatum, iste officiis alias explicabo accusamus repudiandae magni earum? Fugiat, voluptatum dignissimos?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas consequuntur magnam tempore recusandae, mollitia ipsa repellat dolores sed praesentium nobis blanditiis omnis perferendis temporibus facilis et odio provident voluptatum, iste officiis alias explicabo accusamus repudiandae magni earum? Fugiat, voluptatum dignissimos?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas consequuntur magnam tempore recusandae, mollitia ipsa repellat dolores sed praesentium nobis blanditiis omnis perferendis temporibus facilis et odio provident voluptatum, iste officiis alias explicabo accusamus repudiandae magni earum? Fugiat, voluptatum dignissimos?
+              </p>
+              <button data-expand-button>Read More</button>
+            </div>
+        </article>
+      </div>
+    </div>
+
 
     <!-- Sign-in Form -->
     <!-- <div class="form-container">
@@ -40,32 +69,38 @@
     </div> -->
 
     <!-- Images with Links to other pages -->
-    <div class="img-grid">
-      <div class="img-wrapper">
-        <img src="https://picsum.photos/500?random=1" alt="" class="zoom blur">
-        <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
-      </div>
-      <div class="img-wrapper">
-        <img src="https://picsum.photos/500?random=2" alt="" class="zoom blur">
-        <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
-      </div>
-      <div class="img-wrapper">
-        <img src="https://picsum.photos/500?random=3" alt="" class="zoom blur">
-        <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
-      </div>
-      <div class="img-wrapper">
-        <img src="https://picsum.photos/500?random=4" alt="" class="zoom blur">
-        <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
-      </div>
-      <div class="img-wrapper">
-        <img src="https://picsum.photos/500?random=5" alt="" class="zoom blur">
-        <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
-      </div>
-      <div class="img-wrapper">
-        <img src="https://picsum.photos/500?random=6" alt="" class="zoom blur">
-        <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
-      </div>
+    <div class="img-grid-container">
+      <div class="img-grid">
+        <div class="img-wrapper">
+          <img src="https://picsum.photos/500?random=1" alt="" class="zoom blur">
+          <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
+        </div>
+        <div class="img-wrapper">
+          <img src="https://picsum.photos/500?random=2" alt="" class="zoom blur">
+          <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
+        </div>
+        <div class="img-wrapper">
+          <img src="https://picsum.photos/500?random=3" alt="" class="zoom blur">
+          <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
+        </div>
+        <div class="img-wrapper">
+          <img src="https://picsum.photos/500?random=4" alt="" class="zoom blur">
+          <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
+        </div>
+        <div class="img-wrapper">
+          <img src="https://picsum.photos/500?random=5" alt="" class="zoom blur">
+          <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
+        </div>
+        <div class="img-wrapper">
+          <img src="https://picsum.photos/500?random=6" alt="" class="zoom blur">
+          <div class="content fade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odit quod sed distinctio consequuntur voluptatem nulla veritatis necessitatibus aliquid sit!</div>
+        </div>
+      </div>  
     </div>
+  
+
+
+
 
   </main>
 </body>

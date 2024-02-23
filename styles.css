@@ -4,13 +4,44 @@ body {
 
 main {
   border: 5px solid blue;
+}
+
+
+
+/* Read More */
+.article-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.articles {
+  border: 2px solid green;
+  margin: 2rem;
+  width: 1200px;
+}
+
+[data-expandable] [data-expand-text] {
+  --line-height: 1.5;
+  --lines-to-show: 3;
+  position: relative;
+  box-sizing: border-box;
+  line-height: var(--line-height);
+  overflow: hidden;
+  height: calc(var(--line-height) * var(--lines-to-show) * 1em);
+}
+
+[data-expandable].expanded [data-expand-text] {
+  height: initial;
+}
 
 /* Image Grid Container */
+.img-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
